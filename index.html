@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pfl-RV</title>
+  <!-- Bootstrap: CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/708e218ba3.js" crossorigin="anonymous"></script>
+  <!-- Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+
+  <!-- Estilos Google: import en CSS-->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+  <!--Header (navbar)-->
+  <header id="navbar" >
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand titulologo1" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+            <!--Logo AP-->
+            <img src="assets/img/APLogo.png" width="15%" alt="img-logoAP" tittle="img-logoAP" class="d-inline-block align-align-text-center"> #YoProgramo / 3ra Edición
+          </a>
+          <ul class="list-group list-group-horizontal">
+            <!-- Redes Sociales-->
+            <li class="list-group-item"><a class="fa-brands fa-linkedin fa-2xl" href="https://ar.linkedin.com/" target="_blank"></a></li>
+            <li class="list-group-item"><a class="fa-brands fa-square-github fa-2xl" href="https://github.com/login" target="_blank"></a></li>
+            <!-- Trigger/Login -->
+            <li id="login" class="list-group-item">
+              <i class="fa-solid fa-right-to-bracket fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+              <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-right-to-bracket fa-xl"></i></button> -->
+            </li>
+            <!-- Trigger/Logout -->
+            <li id="logout" class="list-group-item">
+              <i class="fa-solid fa-right-from-bracket fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#logoutModal"></i>              
+            </li>
+          </ul>
+          <!-- Trigger/Redes Sociales -->
+          <li id="editRedes" class="list-group-item">
+            <button type="button" class="btn btn-secondary btn-g p-1" data-bs-toggle="modal" data-bs-target="#redesModal">
+            <i class="fa-solid fa-pen fa-l"></i>
+          </li>
+      </div>
+    </nav>
+  </header>
+  <!-- Fin navbar -->
+
+  <!--Seccion: Informacion Personal-->
+  <section id="info" class="about titulo2">
+    <div class="card p-5 align-text-center">
+      <div class="row">
+        <!--Banner-->
+        <img src="assets/img/th.png" class="img-fluid" alt="img-tech" tittle="img-tech"> 
+        <!-- Trigger/Banner -->
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#bannerModal">
+          <i class="fa-solid fa-pen fa-l"></i>
+        </li>
+      </div>
+      <div class="row"> 
+        <!--Informacion Personal-->       
+        <div class="col-3">          
+          <img src="assets/img/RV1.png" class="w-75 d-inline-block img-fluid" alt="foto-rv" title="foto-rv">
+        </div> 
+        <div class="col-9 mt-2">
+          <h3>[Ramon Veiga]</h3>
+          <h4>[Full Stack Developer Jr]</h4>
+          <h5>... 15 años trabajando como Ingeniero de Procesos en la Industria Petrolera Argentina</h5>
+          <h5>Profesional, responsable, autodidacta, interes en programacion y desarrollo de aplicaciones</h5>
+        </div>        
+        <!-- Trigger/Informacion Personal -->
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#infoModal">
+            <i class="fa-solid fa-pen fa-l"></i>
+        </li>
+      </div>
+      <!-- Botonera Acceso Secciones-->        
+      <div class="position-absolute">
+        <a href="#experiencia"><button class="btn btn-outline-warning">Experiencia</button></a>
+        <a href="#educacion"><button class="btn btn-outline-warning">Educacion</button></a>
+        <a href="#habilidades"><button class="btn btn-outline-warning">Habilidades</button></a>
+        <a href="#proyectos"><button class="btn btn-outline-warning">Proyectos</button></a>
+        <a href="#contacto"><button class="btn btn-outline-warning">Contacto</button></a> 
+        <!-- <a class="btn btn-outline-warning" href="#contacto" role="button">Contacto</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!--Seccion: Experiencia-->
+  <section id="experiencia" class="about titulo2">
+    <div class="card p-5 align-text-center">
+      <h2 class="marco1">Experiencia</h2> 
+      <!-- Trigger/Agregar -->
+      <div id="agregarExp">
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#expModal">
+          <i class="fa-solid fa-plus fa-l"></i>
+        </li>  
+      </div>
+      <!--Experiencia-1-->
+      <div id="exp1" class="row">
+        <div class="col-3">
+          <img src="assets/img/ypf1.png" class="w-50 d-inline-block img-fluid" alt="img-Ypf" title="img-Ypf">
+          <h6>2022 | 2023</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Ingeniero de Procesos]</h4>
+          <h6>A cargo de las siguientes tareas: seguimiento de crudos procesados por la compañía, desarrollo de bases de datos, manejo de simuladores ad-hoc. Formación de personal en temas vinculados a materias primas y productos.
+            Elaboración de informes de gestión sobre procesamiento, stock, calidad, logística de crudos, producciones Upstream.</div>
+        <!--editExperiencia-->
+        <div id="editExp1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Experiencia-2-->
+      <div id="exp2" class="row">
+        <div class="col-3">
+          <img src="assets/img/ypf1.png" class="w-50 d-inline-block img-fluid" alt="img-Ypf" title="img-Ypf">
+          <h6>2014 | 2022</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Coordinador de Procesos]</h4>
+          <h6>A cargo de la Coordinación de Crudos, llevando adelante las siguientes tareas: seguimiento de crudos en la compañía, desarrollo de bases de datos, manejo de simuladores ad-hoc, responsable de Laboratorio y Unidades Piloto. Formación de personal de laboratorio en temas vinculados a la gestión y análisis realizados en el sitio.
+            Elaboración de informes de gestión para la Alta Dirección sobre procesamiento, stock, calidad, logística de crudos, producciones Upstream.
+            Participación en desarrollo de aditivos de uso en Upstream.
+            Integrante del Comité de Seguridad de la Gerencia en la que desarrollo mis tareas.</h6>       
+        </div>
+        <!--editExperiencia-->
+        <div id="editExp2"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Experiencia-3-->
+      <div id="exp3" class="row">
+        <div class="col-3">
+          <img src="assets/img/ypf1.png" class="w-50 d-inline-block img-fluid" alt="img-Ypf" title="img-Ypf">
+          <h6>2011 | 2013</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Analista de Gestion Energetica]</h4>
+          <h6>Seguimiento de Presupuesto e Inversiones de Proyectos de Gestión Energética en los Complejos Industriales de YPF. Evaluación del portfolio según importancia y criticidad.
+            Análisis y Evaluación de Proyectos en particular.
+            Auditorías de Energía, con el fin de hallar malos actores y resolver cuellos de botella en las unidades operativas de los Complejos Industriales.
+            Desarrollo y seguimiento de indicadores de gestión y performance.
+            Seguimiento de los objetivos definidos por Gestión Energética dentro del Plan Estratégico de Downstream.</h6>       
+        </div>
+        <!--editExperiencia-->
+        <div id="editExp3"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Experiencia-4-->
+      <div id="exp4" class="row">
+        <div class="col-3">
+          <img src="assets/img/ypf1.png" class="w-50 d-inline-block img-fluid" alt="img-Ypf" title="img-Ypf">
+          <h6>2009 | 2010</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Analista de Proyectos]</h4>
+          <h6>Evaluación de cartera de proyectos, asignación de presupuesto anual, reasignaciones de partidas presupuestarias, y seguimiento de Proyectos en la Vicepresidencia Ejecutiva Downstream de YPF.
+            Asignación de capitales a la cartera de proyectos, según el negocio y capacidad de ejecución. Total de proyecto al año: 600 proyectos en cartera.
+            Análisis y Evaluación de Proyectos y obras.
+            Seguimiento y control de las partidas presupuestarias asignadas por proyecto y sector.
+            Participación en la gestión de aprobación y liberación de fondos.
+            Elaboración de resúmenes de gestión ejecutivos.</h6>       
+        </div>
+        <!--editExperiencia-->
+        <div id="editExp4"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Experiencia-5-->
+      <div id="exp5" class="row">
+        <div class="col-3">
+          <img src="assets/img/ypf1.png" class="w-50 d-inline-block img-fluid" alt="img-Ypf" title="img-Ypf">
+          <h6>2003 | 2008</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Ingeniero de Procesos]</h4>
+          <h6>Simulación de Procesos en Estado Estacionario (software utilizado: PRO II™, Pipephase™, Aspen Hysys™, Exchanger Design and Rating™). 
+            Estudios de Cuellos de Botella en Unidades de Proceso (las unidades estudiadas son las que conforman un Esquema de Refino complejo). 
+            Estudio y Chequeo de Redes: agua de enfriamiento, descarga de gases a antorcha, gasoductos. 
+            Participación en distintas etapas de ingeniería para la incorporación de nuevas unidades de procesos o Revamp de unidades existentes</h6>       
+        </div>
+        <!--editExperiencia-->
+        <div id="editExp5"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Experiencia-6-->
+      <div id="exp6" class="row">
+        <div class="col-3">
+          <img src="assets/img/repsolypf.png" class="w-50 d-inline-block img-fluid" alt="img-repsolYpf" title="img-repsolYpf">
+          <h6>2000 | 2002</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Operador de Planta Piloto]</h4>
+          <h6>Evaluación y Testeo de Catalizadores Industriales. 
+            Operación y mantenimiento de unidades piloto</h6>
+        </div>
+        <!--editExperiencia-->
+        <div id="editExp6"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Experiencia-7-->
+      <div id="exp7" class="row">
+        <div class="col-3">
+          <img src="assets/img/repsolypf.png" class="w-50 d-inline-block img-fluid" alt="img-repsolYpf" title="img-repsolYpf">
+          <h6>1999 | 2000</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>[Tecnico de Laboratorio]</h4>
+          <h6>Evaluación y Testeo de muestras de crudos y combustibles líquidos. 
+            Operación de equipos de laboratorio / Cromatografía en fase gaseosa</h6>
+        </div>
+        <!--editExperiencia-->
+        <div id="editExp7"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>      
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>
+    </div>
+  </section>
+   
+  <!--Seccion: Educacion-->
+  <section id="educacion" class="about titulo2">
+    <div class="card p-5 align-text-center">
+      <h2 class="marco1">Educacion</h2>
+      <!-- Trigger/Agregar -->
+      <div id="agregarEdu">
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+          <i class="fa-solid fa-plus fa-l"></i>
+        </li>
+      </div>
+      <!-- Educacion-1 -->
+      <div id="edu1" class="row">
+        <div class="col-3">
+          <img src="assets/img/utn2.jfif" class="w-50 d-inline-block img-fluid" alt="logo-utn" title="logo-utn">
+          <h6>1995 | 2001</h6>
+        </div>
+        <div class="col-9">
+          <h3>Certificacion Academica</h3>
+          <h4>[Ingeniero Quimico]</h4>
+          <h6>Universidad Tecnologica Nacional</h6>
+          <h6>Facultad Regional La Plata</h6>
+        </div>
+        <!--editEducacion-->
+        <div id="editEdu1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div> 
+      </div>
+      <!-- Educacion-2 -->
+      <div id="edu2" class="row">
+        <div class="col-3">
+          <img src="assets/img/APLogo.png" class="w-75 d-inline-block img-fluid logo" alt="logo-acadevor" title="logo-acadevor">
+          <h6>2022</h6>
+        </div>
+        <div class="col-9">
+          <h3>Curso</h3>
+          <h4>[#SeProgramar]</h4>
+          <h6>1ra etapa del Plan Argentina Programa</h6>                
+        </div>
+        <!--editEducacion-->
+        <div id="editEdu2"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div> 
+      </div>
+      <!-- Educacion-3 -->
+      <div id="edu3" class="row">
+        <div class="col-3">
+          <img src="assets/img/acadevor2.png" class="w-50 d-inline-block img-fluid" alt="logo-acadevor" title="logo-acadevor">
+          <h6>2022</h6>
+        </div>
+        <div class="col-9">
+          <h3>Curso</h3>
+          <h4>[Reportes Profesionales con Power BI Desktop]</h4>
+          <h6>Acadevor</h6>
+          <h6>Horas de Clases: 10h 26m</h6>         
+        </div>
+        <!--editEducacion-->
+        <div id="editEdu3"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div> 
+      </div>
+      <!-- Educacion-4 -->
+      <div id="edu4" class="row">
+        <div class="col-3">
+          <img src="assets/img/acadevor2.png" class="w-50 d-inline-block img-fluid" alt="logo-acadevor" title="logo-acadevor">
+          <h6>2022</h6>
+        </div>
+        <div class="col-9">
+          <h3>Curso</h3>
+          <h4>[Modelado y Funciones DAX para Power BI Desktop]</h4>
+          <h6>Acadevor</h6>
+          <h6>Horas de Clases: 13h 35m</h6>         
+        </div>
+        <!--editEducacion-->
+        <div id="editEdu4"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div> 
+      </div>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>
+    </div>
+  </section>
+
+  <!--Seccion: Habilidades-->
+  <section id="habilidades" class="about titulo2">
+    <div class="card p-5 align-text-center">        
+      <div class="row">
+        <div class="col">
+          <h2 class="marco1"> Habilidades Duras </h2>
+          <!-- Trigger/Agregar -->
+          <div id="agregarHabDur">
+            <li class="list-group list-group-horizontal justify-content-end">
+              <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+              <i class="fa-solid fa-plus fa-l"></i>
+            </li>
+          </div>
+          <!-- HabilidadDura-1-->
+          <div id="habDur1" class="mb-3">
+            <label><h5>VBA</h5></label>
+            <!-- <div class="progress mt-0.5">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 40%" aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div> -->
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 40%">40%</div>
+            </div>
+            <!--editHabilidadDura-->
+            <div id="editHabDur1"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- HabilidadDura-2-->
+          <div id="habDur2" class="mb-3">
+            <label><h5>HTML</h5></label>
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 25%">25%</div>
+              </div>
+              <!--editExperiencia-->
+              <div id="editHabDur2"class="row">
+                <div class="container-fluid">
+                  <ul class="list-group list-group-horizontal justify-content-end">
+                    <!-- Trigger/Editar -->
+                    <li class="list-group-item">
+                      <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                        <i class="fa-solid fa-pen fa-l"></i>
+                    </li>
+                    <!-- Trigger/Eliminar -->
+                    <li class="list-group-item">
+                      <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                      <i class="fa-solid fa-trash fa-l"></i>
+                    </li>        
+                  </ul>
+                </div>
+              </div>                
+          </div>
+          <!-- HabilidadDura-3-->
+          <div id="habDur3" class="mb-3">
+            <label><h5>CSS</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 15%">15%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabDur3"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadDura-4-->
+          <div id="habDur4" class="mb-3">
+            <label><h5>JS</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 15%">15%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabDur4"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadDura-5-->
+          <div id="habDur5" class="mb-3">
+            <label><h5>POWER BI</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 20%">20%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabDur5"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadDura-6-->
+          <div id="habDur6" class="mb-3">
+            <label><h5>Ingles</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabDur6"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col">
+          <h2 class="marco1"> Habilidades Blandas </h2>
+          <!-- Trigger/Agregar -->
+          <div id="agregarHabDur">
+            <li class="list-group list-group-horizontal justify-content-end">
+              <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+              <i class="fa-solid fa-plus fa-l"></i>
+            </li>
+          </div>
+          <!-- HabilidadBlanda-1-->
+          <div id="habBla1" class="mb-3">
+            <label><h5>Trabajo en Equipo</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabBla1"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadBlanda-2-->
+          <div id="habBla2" class="mb-3">
+            <label><h5>Comunicacion Asertiva</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 50%">50%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabBla2"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadBlanda-3-->
+          <div id="habBla3" class="mb-3">
+            <label><h5>Adaptabilidad</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabBla3"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadBlanda-4-->
+          <div id="habBla4" class="mb-3">
+            <label><h5>Resolucion de Problemas</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabBla4"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadBlanda-5-->
+          <div id="habBla5" class="mb-3">
+            <label><h5>Gestion del Tiempo</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabBla5"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <!-- HabilidadBlanda-6-->
+          <div id="habBla6" class="mb-3">
+            <label><h5>Etica-Compromiso-Responsabildiad</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+            <!--editExperiencia-->
+            <div id="editHabBla6"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>
+    </div>
+  </section>
+
+  <!--Seccion: Proyectos-->
+  <section id="proyectos" class="about titulo2 mb-4">
+    <div class="card p-5 align-text-center">        
+      <h2 class="marco1">Proyectos</h2>
+      <!-- Trigger/Agregar -->
+      <div id="agregarProy">
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#proyModal">
+          <i class="fa-solid fa-plus fa-l"></i>
+        </li>
+      </div>
+      <!-- Proyecto-1 -->
+      <div id="proy1" class="row">
+        <div class="col-3">
+          <img src="assets/img/APLogo.png" class="w-75 d-inline-block img-fluid logo" alt="logo-AP" title="logo-AP">
+          <h6>2022 | 2023</h6>
+        </div>
+        <div class="col-9 mr-2">
+          <h4>Portfolio Web</h4>
+          <h6>#YoProgramo - 3ra Edicion. 
+            Desarrollo de aplicacion web full stack de arquitectura distribuida con diseño de interfaz de usuario front end,
+          base de datos de almacenamiento y conexion con APIs para provision de servicio back end.  </h6>
+        </div>
+        <!--editProyectos-->
+        <div id="editProy1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#proyModal">
+                  <i class="fa-solid fa-pen fa-l"></i>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i>
+              </li>        
+            </ul>
+          </div>
+        </div>            
+      </div>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                        
+      </div>        
+    </div>             
+  </section>
+
+  <!--Seccion: Contacto-->
+  <section id="contacto" class="about titulo2 mb-4">
+    <div class="card p-5 align-text-center">        
+      <h2 class="marco1">Contacto</h2>
+      <!-- Contacto-1 -->
+      <div id="cont1" class="row">
+        <div class="col-3">
+          <img src="assets/img/contacto2.png" class="w-75 d-inline-block img-fluid" alt="img-contacto" title="img-contacto">
+        </div>
+        <div class="col-9 mt-2">
+          <div class="row">
+            <div class="col">
+              <h6>Celular: </span></h4>
+            </div>
+            <div class="col">
+              <h6>+54 9221 649-4720 </h6>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h6>Correo Electronico: </span></h4>
+            </div>
+            <div class="col">
+              <h6>ramon.veiga1@gmail.com</h6>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h6>Direccion: </span></h4>
+            </div>
+            <div class="col">
+              <h6>3 bis N°1313 entre/518 y 519</h6>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h6>Ciudad: </span></h4>
+            </div>
+            <div class="col">
+              <h6>La Plata</h6>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h6>Codigo Postal: </span></h4>
+            </div>
+            <div class="col">
+              <h6>(1906)</h6>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h6>Provincia: </span></h4>
+            </div>
+            <div class="col">
+              <h6>Buenos Aires</h6>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!--editContacto-->
+        <div id="editCont1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+            <!-- Trigger/Contactar -->
+            <li class="list-group-item">
+              <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#contModal">
+                <i class="fa-solid fa-pen fa-l"></i>
+            </li>        
+            </ul>
+          </div>
+        </div>            
+      </div> 
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>       
+    </div>             
+  </section>
+
+  <!--Seccion: Extensiones-->
+  <section id="extensiones" class="about titulo2 mb-4">
+    <div class="card p-5 align-text-center">
+      <!--contacto-->
+      <div id="editProy1"class="row">
+        <div class="container-fluid">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <!-- Trigger/ImprimirPfl -->
+            <li class="list-group-item">
+              <button type="button" class="btn btn-primary btn-g p-2" data-bs-toggle="modal" data-bs-target="#imprimirModal">
+              <i class="fa-solid fa-print fa-xl"></i>
+            </li>        
+          </ul>
+        </div>
+      </div>      
+    </div>      
+  </section>
+
+
+<!-- MODALES -->  
+  <!-- MODALES -->
+    <!-- MODALES -->
+
+  <section>
+  <!-- Modal-Login-->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <!-- Formulario -->
+          <form class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInputValue" name="floatingInputValue" placeholder="name@example.com" value="name@domain.com" required>
+              <label for="floatingInputValue" class="form-label">Username</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" name="floatingPassword" placeholder="password" required>
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+            </div>
+          </form>
+          <!-- Fin Formulario -->
+        <!-- Boton Inicio Sesion -->
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Logout -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="logoutModalLabel">Logout</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Boton Cierre Sesion -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Cerrar Sesion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Redes Sociales -->
+  <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Redes Sociales</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Logo</label>
+            <input class="form-control" type="file" id="formFile">
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+              </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Banner -->
+  <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Banner</h5>
+          <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Seleccionar Imagen</label>
+            <input class="form-control" type="file" id="formFile">
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Informacion Personal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Información Personal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Foto</label>
+            <input class="form-control" type="file" id="formFile">
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Titulo" aria-label="Tit">
+                </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea" class="form-label">Información Profesional</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="1"></textarea>
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Experiencia Laboral -->
+  <div class="modal fade" id="expModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Experiencia Laboral</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Logo</label>
+            <input class="form-control" type="file" id="formFile">
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Empresa" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Puesto" aria-label="Last name">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Inicio" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Fin" aria-label="Last name">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea" class="form-label">Actividades</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="1"></textarea>
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Educacion -->
+  <div class="modal fade" id="eduModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Certificacion Academica / Curso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Logo</label>
+            <input class="form-control" type="file" id="formFile">
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Institucion" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="Titulo" aria-label="First name">
+                </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Inicio" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Fin" aria-label="Last name">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <!-- <div class="mb-3">
+            <label for="exampleFormControlTextarea" class="form-label">Cursos</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="1"></textarea>
+            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Habilidad Dura-->
+  <div class="modal fade" id="habDurModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Habilidad Dura</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <!-- <div>
+            <label class="mt-1"><h5>Dura</h5></label>
+          </div> -->
+          <div class="mb-3">
+            <div>
+              <!-- <label>Trabajo en Equipo</label> -->
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="progress mt-1">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 10%" aria-valuemin="0" aria-valuemax="100">10%</div>
+            </div>
+            <div class="mt-1">
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Habilidad Blanda-->
+  <div class="modal fade" id="habBlaModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Habilidad Blanda</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <!-- <div>
+            <label class="mt-1"><h5>Blanda</h5></label>
+          </div> -->
+          <div class="mb-3">
+            <div>
+              <!-- <label>Trabajo en Equipo</label> -->
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="progress mt-1">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 10%" aria-valuemin="0" aria-valuemax="100">10%</div>
+            </div>
+            <div class="mt-1">
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </div>
+          <hr>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Proyecto -->
+  <div class="modal fade" id="proyModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <div class="mb-3">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <label for="formFile" class="form-label">Logo</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col">
+                  <label for="formFile" class="form-label">Empresa</label>
+                  <input type="text" class="form-control" id="formFile">
+                </div>
+              </div>
+              <div class="col">
+                <label for="formFile4" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formFile4">
+              </div>
+              <button type="button" class="btn btn-primary btn-sm mt-1">Guardar</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <!-- <div class="col"> -->
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Inicio" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Fin" aria-label="Last name">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm mt-1">Guardar</button>
+            <!-- </div> -->
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea" class="form-label">Descripcion</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="1"></textarea>
+            <button type="button" class="btn btn-primary btn-sm mt-1">Guardar</button>
+          </div>
+          <a href="#">Ir-->Evidencia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Contacto -->
+  <div class="modal fade" id="contModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputText" class="form-label">Celular</label>
+              <input type="text" class="form-control" id="inputText">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="calle xx N°xx e/xx y xx">
+            </div>
+            <!-- <div class="col-12">
+              <label for="inputAddress2" class="form-label">Direccion 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, casa, oficina">
+            </div> -->
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">CP</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Provincia</label>
+              <input type="text" class="form-control" id="inputState">
+              <!-- <select id="inputState" class="form-select">
+                <option selected>Buenos Aires</option>
+                <option>Cordoba</option>
+                <option>Mendoza</option>
+                <option>Neuquen</option>
+              </select> -->
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+            </div>
+          </form>         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal-Imprimir PFL-->
+  <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Imprimir Portfolio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario-->
+          <a href="#">Imprimir</a>
+          <!-- <a href="documento.pdf" download="miarchivo.pdf">Descargar</a>
+          <a href="imagen.jpg" download="mi-imagen">img</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+</section>
+
+<footer class="navbar navbar-expand-lg bg-primary p-2">
+  <h5 class="titulo1">(c) Copyright RV 2023</h5>
+</footer>
+  <!-- Bootstrap: JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
